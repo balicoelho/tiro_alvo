@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+    body{background-color:#878787; margin:0px; height:100vh; display:flex; align-items:center; justify-content:center;}
+    canvas{background-color:#ffffff; border:12px solid #444444; border-radius:20px;}
+    </style>
   </head>
   <body>
     <canvas width="600" height="400"></canvas>
@@ -27,8 +31,8 @@
 
       const createTarget = (ev) => {
         cleanScreen();
-        xRandom = Math.random() * 600;
-        yRandom = Math.random() * 400;
+        xRandom = 30 + Math.random() * 540;
+        yRandom = 30 + Math.random() * 340;
         drawCircle(xRandom, yRandom, radius + 20, "red");
         drawCircle(xRandom, yRandom, radius + 10, "white");
         drawCircle(xRandom, yRandom, radius, "red");
